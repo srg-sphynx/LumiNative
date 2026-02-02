@@ -1,4 +1,9 @@
-# MonitorControl V3 - Liquid Glass Edition
+<div align="center">
+  <img src="docs/assets/banner.png" alt="LumiNative Banner" width="100%">
+  <br>
+  <img src="docs/assets/icon.png" alt="LumiNative Icon" width="128">
+  <h1>MonitorControl V3 - Liquid Glass Edition</h1>
+</div>
 
 A lightweight, crash-proof brightness controller for external monitors on Apple Silicon Macs. 
 Now with a beautiful **Liquid Glass** interface and **Sync Brightness** capability.
