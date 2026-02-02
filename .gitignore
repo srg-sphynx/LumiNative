@@ -1,0 +1,13 @@
+.build/
+.swiftpm/
+*.xcodeproj
+*.xcworkspace
+build/
+DerivedData/
+*.app
+*.dSYM
+*.dmg
+.DS_Store
+User Manual.pdf
+Build Log.pdf
+dist/

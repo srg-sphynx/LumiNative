@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MonitorControl Build Log</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            color: #007AFF;
+            border-left: 4px solid #007AFF;
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 25px;
+            color: #444;
+            font-weight: 600;
+        }
+
+        p,
+        li {
+            color: #555;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .timestamp {
+            font-size: 0.8em;
+            color: #999;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8em;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MonitorControl V2 Build Log</h1>
+    <p>A complete history of changes, features, and fixes implemented in MonitorControl V2.</p>
+
+    <!-- Content derived from walkthrough.md -->
+
+    <h2>V2.21.0: Final Release & Polish</h2>
+    <ul>
+        <li><strong>Adaptive Dashboard:</strong> Dashboard preset buttons now intelligently hide "Int" or "Ext"
+            percentages based on active monitors (e.g. Clamshell Mode).</li>
+        <li><strong>Documentation:</strong> Included comprehensive PDF User Manual and Build Log.</li>
+        <li><strong>Packaging:</strong> Automated DMG creation and delivery to Downloads folder.</li>
+    </ul>
+
+    <h2>V2.20.0: Silent Presets</h2>
+    <ul>
+        <li><strong>Disabled Live Preview:</strong> Dragging sliders in "Add Preset" no longer changes hardware
+            brightness immediately. This prevents eye strain during configuration.</li>
+        <li><strong>Refined UX:</strong> Changes only apply when the preset is Saved and Activated.</li>
+    </ul>
+
+    <h2>V2.19.0: Adaptive Presets UI</h2>
+    <ul>
+        <li><strong>Clamshell Awareness:</strong> The "Internal Brightness" slider is hidden from the Add Preset menu
+            when the lid is closed.</li>
+        <li><strong>cleaner Interface:</strong> Reduces visual clutter by showing only relevant controls.</li>
+    </ul>
+
+    <h2>V2.18.0: Focus Logic Fix</h2>
+    <ul>
+        <li><strong>Reliable Targeting:</strong> Fixed a bug where keyboard shortcuts sometimes failed to target
+            external monitors.</li>
+        <li><strong>Safety Fallback:</strong> If cursor position cannot be determined, control defaults to ALL external
+            monitors.</li>
+    </ul>
+
+    <h2>V2.17.0: Clamshell & Focus</h2>
+    <ul>
+        <li><strong>Focus Follows Mouse:</strong> Brightness keys (F1/F2) now control the monitor under your mouse
+            cursor.</li>
+        <li><strong>Auto-Refresh:</strong> App automatically detects lid close/open and updates the monitor list
+            instantly.</li>
+    </ul>
+
+    <h2>V2.16.0: Robust Sync</h2>
+    <ul>
+        <li><strong>Double-Tap Engine:</strong> Implemented a multi-stage synchronization strategy (Immediate + Delayed)
+            to handle slow-waking monitors.</li>
+        <li><strong>Race Condition Fix:</strong> Eliminated startup sync bugs by ensuring display detection is complete
+            before reading hardware state.</li>
+    </ul>
+
+    <h2>V2.15.0: Startup Synchronization</h2>
+    <ul>
+        <li><strong>Cold Start Fix:</strong> App forces a hardware sync 0.5s after launch to ensure internal state
+            matches reality.</li>
+    </ul>
+
+    <h2>V2.14.0: Live Editing</h2>
+    <ul>
+        <li><strong>Edit Mode:</strong> Enabled editing of existing presets (Name, Icon, Values).</li>
+        <li><strong>Zero-Kickstart:</strong> Fixed issues where presets wouldn't apply correctly on first try.</li>
+    </ul>
+
+    <h2>V2.13.0: UI Fixes</h2>
+    <ul>
+        <li><strong>Scrollable Add Preset:</strong> Fixed layout issues on smaller screens.</li>
+        <li><strong>Pinned Footer:</strong> Action buttons are now always visible.</li>
+    </ul>
+
+    <h2>V2.12.0: Preset Overhaul</h2>
+    <ul>
+        <li><strong>Custom Values:</strong> Added explicit sliders for setting preset target values.</li>
+        <li><strong>Curated Icons:</strong> Added high-quality SF Symbols for preset customization.</li>
+    </ul>
+
+    <h2>V2.0 - V2.11: Foundation</h2>
+    <ul>
+        <li><strong>Liquid Glass UI:</strong> Complete translucent redesign.</li>
+        <li><strong>Native Internal Control:</strong> Bridge to `DisplayServices` for built-in screen control.</li>
+        <li><strong>Smooth Transitions:</strong> 120Hz ProMotion support and easing functions.</li>
+        <li><strong>Performance:</strong> Optimized DDC/CI communication.</li>
+    </ul>
+
+    <div class="footer">
+        Generated automatically from project artifacts.
+    </div>
+
+</body>
+
+</html>

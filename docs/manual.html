@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MonitorControl User Manual</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            color: #007AFF;
+            letter-spacing: -0.5px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            margin-top: 25px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 25px;
+            transition: transform 0.2s;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: #007AFF;
+            font-size: 1.2em;
+        }
+
+        .feature-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #007AFF, #00C6FF);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 122, 255, 0.25);
+        }
+
+        .hero-banner h1 {
+            color: white;
+            border: none;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-banner p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            background: #FFF8E1;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 4px solid #FFC107;
+            display: inline-block;
+        }
+
+        .version {
+            font-size: 0.9em;
+            color: #888;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SF Mono", monospace;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-banner">
+        <img src="../app_icon.png" class="app-icon"
+            style="box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 2px solid white;">
+        <h1>LumiNative</h1>
+        <p>Unlock the full potential of your external displays on Apple Silicon.</p>
+    </div>
+
+    <h2>Core Features</h2>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>Native Control</h3>
+            <p>Control external brightness exactly like your built-in display using DDC/CI commands. Tap the slider for
+                smooth animations.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Adaptive Presets</h3>
+            <p>The "Add Preset" menu intelligently detects your environment (Clamshell, Laptop, or Desktop) and hides
+                irrelevant sliders.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Clamshell Mode</h3>
+            <p>Full support for closed-lid operation. The app automatically hides internal controls when appropriate.
+            </p>
+        </div>
+        <div class="feature-card">
+            <h3>Silent Presets</h3>
+            <p>Create custom brightness presets without eye strain. Editing is silent; changes apply only when you click
+                save.</p>
+        </div>
+    </div>
+
+    <h2>Detailed Usage</h2>
+
+    <h3>Dashboards & Presets</h3>
+    <p>LumiNative V2 introduces a powerful new Dashboard. Click the grid icon to access it.</p>
+    <ul>
+        <li><strong>Favorites Cycle:</strong> Add presets to your favorites by entering "Edit" mode in the dashboard and
+            clicking the Star icon.</li>
+        <li><strong>Quick Cycle:</strong> Click the Star icon in the main slider view to instantly cycle through your
+            favorite brightness presets (e.g., Day -> Night -> Gaming).</li>
+        <li><strong>Adaptive UI:</strong> The dashboard automatically hides "Internal" or "External" labels if that
+            monitor is not connected (e.g. Clamshell mode).</li>
+        <li><strong>Creating Presets:</strong> Click "New Preset". Drag sliders to set values. Note that "Live Preview"
+            is disabled for comfort.</li>
+    </ul>
+
+    <h3>Synchronization</h3>
+    <p>We use a robust "Double-Tap" sync engine to ensure reliability.</p>
+    <ul>
+        <li><strong>Immediate Sync:</strong> Reads hardware state instantly on app launch.</li>
+        <li><strong>Robust Check:</strong> Re-scans 2 seconds later for slow monitors.</li>
+    </ul>
+
+    <div class="version">
+        <strong>LumiNative v2.26.0</strong><br>
+        Created by Saketa Reddy • Engineered for Apple Silicon
+    </div>
+
+</body>
+
+</html>
