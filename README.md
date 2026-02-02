@@ -5,6 +5,9 @@
   <h1>MonitorControl V3 - Liquid Glass Edition</h1>
 </div>
 
+> [!NOTE]
+> **Personal Project**: This is a fun personal project and is **not notarized by Apple**. You may need to right-click and select "Open" when launching for the first time.
+
 A lightweight, crash-proof brightness controller for external monitors on Apple Silicon Macs. 
 Now with a beautiful **Liquid Glass** interface and **Sync Brightness** capability.
 
